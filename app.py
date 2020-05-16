@@ -1,11 +1,10 @@
-# author = rhnvrm <hello@rohanverma.net>
 import os
 from flask import Flask, request, render_template, jsonify
 from twitter import TwitterClient
 
 app = Flask(__name__)
 # Setup the client <query string, retweets_only bool, with_sentiment bool>
-api = TwitterClient('@SuvarnaVaidya3')
+api = TwitterClient('@Ashish17969125')
 
 
 def strtobool(v):
@@ -31,5 +30,5 @@ def tweets():
         return jsonify({'data': tweets, 'count': len(tweets)})
 
 
-port = int(os.environ.get('PORT', 5000))
-app.run(host="127.0.0.1", port=port, debug=True)
+if __name__ == '__main__':
+    app.run()
