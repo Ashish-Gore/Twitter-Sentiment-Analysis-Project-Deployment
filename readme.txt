@@ -1,3 +1,3 @@
-#Project Deplyement Link:
+Project Deplyement Link:
 
 https://twitter-sentiment-analysis-dep.herokuapp.com/
